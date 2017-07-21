@@ -1,0 +1,226 @@
+<!DOCTYPE html> 
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>FriendFinder</title>
+
+        <!-- Latest compiled and minified CSS & JS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <!-- Font Awesome Glyphicons -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+        <!-- Latest compiled and minified CSS bootstrap-selector-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+        <!-- Latest compiled and minified JavaScript bootstrap-selector-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+        <!-- (Optional) Latest compiled and minified JavaScript translation files bootstrap-selector-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/i18n/defaults-*.min.js"></script>
+
+
+
+    </head>
+    <body cz-shortcut-listen="true">
+
+        <div class="container">
+
+            <h2 class = "text-danger">Survey Questions</h2>
+            <hr>
+
+            <h3><strong>About You</strong></h3>
+            <h4>Name (Required)</h4>
+            <input type="text" name="" id="name" class="form-control">
+
+            <h4>Link to Photo Image (Required)</h4>
+            <input type="text" name="" id="photo" class="form-control">
+
+            <hr>
+
+            <h4 class = "text-danger"><strong>1 is Strongly Disagree and 5 is Strongly Agree</strong></h4>
+            
+            <h3><strong>Question 1</strong></h3>
+            <h4>You sometimes wake up in a different place, maybe as a different person.</h4>
+            <select class="selectpicker" id="qone">
+                <option id = "1">1</option>
+                <option id = "2">2</option>
+                <option id = "3">3</option>
+                <option id = "4">4</option>
+                <option id = "5">5</option>
+            </select>
+
+            <h3><strong>Question 2</strong></h3>
+            <h4>You use used motor oil as lawn fertilizer.</h4>
+            <select class="selectpicker" id = "qtwo">
+                <option id = "1">1</option>
+                <option id = "2">2</option>
+                <option id = "3">3</option>
+                <option id = "4">4</option>
+                <option id = "5">5</option>
+            </select>
+
+             <h3><strong>Question 3</strong></h3>
+            <h4>You are Jack's inflamed sense of rejection.</h4>
+            <select class="selectpicker" id = "qthree">
+                <option id = "1">1</option>
+                <option id = "2">2</option>
+                <option id = "3">3</option>
+                <option id = "4">4</option>
+                <option id = "5">5</option>
+            </select>
+
+            <h3><strong>Question 4</strong></h3>
+            <h4>You know and abide by the first rule of Fight Club.</h4>
+            <select class="selectpicker" id = "qfour">
+                <option id = "1">1</option>
+                <option id = "2">2</option>
+                <option id = "3">3</option>
+                <option id = "4">4</option>
+                <option id = "5">5</option>
+            </select>
+
+            <h3><strong>Question 5</strong></h3>
+            <h4>You have had a fight with yourself and lost.</h4>
+            <select class="selectpicker" id = "qfive">
+                <option id = "1">1</option>
+                <option id = "2">2</option>
+                <option id = "3">3</option>
+                <option id = "4">4</option>
+                <option id = "5">5</option>
+            </select>
+
+            <h3><strong>Question 6</strong></h3>
+            <h4>You sometimes steal clothes from laundromats.</h4>
+            <select class="selectpicker" id = "qsix">
+                <option id = "1">1</option>
+                <option id = "2">2</option>
+                <option id = "3">3</option>
+                <option id = "4">4</option>
+                <option id = "5">5</option>
+            </select>
+
+            <h3><strong>Question 7</strong></h3>
+            <h4>If in an airplane crash you would remain as calm as a Hindu cow.</h4>
+            <select class="selectpicker" id = "qseven">
+                <option id = "1">1</option>
+                <option id = "2">2</option>
+                <option id = "3">3</option>
+                <option id = "4">4</option>
+                <option id = "5">5</option>
+            </select>
+
+            <h3><strong>Question 8</strong></h3>
+            <h4>You believe that the things you own end up owning you.</h4>
+            <select class="selectpicker" id = "qeight">
+                <option id = "1">1</option>
+                <option id = "2">2</option>
+                <option id = "3">3</option>
+                <option id = "4">4</option>
+                <option id = "5">5</option>
+            </select>
+
+            <h3><strong>Question 9</strong></h3>
+            <h4>You know how to make soap.</h4>
+            <select class="selectpicker" id = "qnine">
+                <option id = "1">1</option>
+                <option id = "2">2</option>
+                <option id = "3">3</option>
+                <option id = "4">4</option>
+                <option id = "5">5</option>
+            </select>
+
+            <h3><strong>Question 10</strong></h3>
+            <h4>You go to multiple therapy groups because it helps you sleep.</h4>
+            <select class="selectpicker" id = "qten">
+                <option id = "1">1</option>
+                <option id = "2">2</option>
+                <option id = "3">3</option>
+                <option id = "4">4</option>
+                <option id = "5">5</option>
+            </select>
+
+            <br>
+            <br>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-danger btn-lg btn-block" id="submit"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+             Submit</button>
+
+            <hr>
+            <footer class="footer">
+            <div class="container">
+                    <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/Lolobrew/FriendFinder">GitHub Repo</a></p>
+            </div>
+            </footer>
+
+        </div>
+
+        <!-- Modal -->
+        <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h2 class="modal-title"><strong>Best Match</strong></h2>
+            </div>
+            <div class="modal-body">
+                <h2 id="matchName"></h2>
+                <img id="matchImg" src="#" alt="">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+
+        </div>
+        </div>
+
+    <script type="text/javascript">
+  
+
+
+        // Capture the form inputs 
+        $("#submit").on("click", function(){
+
+                    var q1 = parseInt($('#qone').val());
+                    var q2 = parseInt($('#qtwo').val());
+                    var q3 = parseInt($('#qthree').val());
+                    var q4 = parseInt($('#qfour').val());
+                    var q5 = parseInt($('#qfive').val());
+                    var q6 = parseInt($('#qsix').val());
+                    var q7 = parseInt($('#qseven').val());
+                    var q8 = parseInt($('#qeight').val());
+                    var q9 = parseInt($('#qnine').val());
+                    var q10 = parseInt($('#qten').val());
+
+                    var userInfo = {
+                        name: $('#name').val(),
+                        photo: $('#photo').val(),
+                        scores: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
+                    }
+
+                    console.log(userInfo);
+
+                    var currentURL = window.location.origin;
+
+                    $.post(currentURL + "/api/friends", userInfo, function(data){
+                        $('#matchName').text(data.name);
+                        $('#matchImg').attr('src', data.photo);
+
+                        $('#resultsModal').modal('toggle');
+                    });
+
+        });
+
+
+    </script>
+
+
+         <div id="window-resizer-tooltip" style="display: none;"><a href="#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1918</span> x <span class="tooltipHeight" id="winHeight">1038</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">226</span> x <span class="tooltipHeight" id="vpHeight">976</span></div>
+    </body>
+</html>
