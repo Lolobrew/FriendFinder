@@ -188,33 +188,38 @@
         $("#submit").on("click", function(){
             event.preventDefault();
 
-                    var q1 = parseInt($('#qone').val());
-                    var q2 = parseInt($('#qtwo').val());
-                    var q3 = parseInt($('#qthree').val());
-                    var q4 = parseInt($('#qfour').val());
-                    var q5 = parseInt($('#qfive').val());
-                    var q6 = parseInt($('#qsix').val());
-                    var q7 = parseInt($('#qseven').val());
-                    var q8 = parseInt($('#qeight').val());
-                    var q9 = parseInt($('#qnine').val());
-                    var q10 = parseInt($('#qten').val());
+            if($('#name').val() === "" || $('#photo').val() === ""){
+                alert("Please fill in a valid name and photo link!")
+            } else {
 
-                    var userInfo = {
-                        name: $('#name').val(),
-                        photo: $('#photo').val(),
-                        scores: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
-                    }
+                var q1 = parseInt($('#qone').val());
+                var q2 = parseInt($('#qtwo').val());
+                var q3 = parseInt($('#qthree').val());
+                var q4 = parseInt($('#qfour').val());
+                var q5 = parseInt($('#qfive').val());
+                var q6 = parseInt($('#qsix').val());
+                var q7 = parseInt($('#qseven').val());
+                var q8 = parseInt($('#qeight').val());
+                var q9 = parseInt($('#qnine').val());
+                var q10 = parseInt($('#qten').val());
 
-                    console.log(userInfo);
+                var userInfo = {
+                    name: $('#name').val(),
+                    photo: $('#photo').val(),
+                    scores: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
+                }
 
-                    var currentURL = window.location.origin;
+                console.log(userInfo);
 
-                    $.post(currentURL + "/api/friends", userInfo, function(data){
-                        $('#matchName').text(data.name);
-                        $('#matchImg').attr('src', data.photo);
+                var currentURL = window.location.origin;
 
-                        $('#resultsModal').modal('toggle');
-                    });
+                $.post(currentURL + "/api/friends", userInfo, function(data){
+                    $('#matchName').text(data.name);
+                    $('#matchImg').attr('src', data.photo);
+
+                    $('#resultsModal').modal('toggle');
+                });
+            }
 
         });
 
