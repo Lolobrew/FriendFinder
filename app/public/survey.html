@@ -103,7 +103,7 @@
             </select>
 
             <h3><strong>Question 7</strong></h3>
-            <h4>If in an airplane crash you would remain as calm as a Hindu cow.</h4>
+            <h4>If you were in an airplane crash you would remain as calm as a Hindu cow.</h4>
             <select class="selectpicker" id = "qseven">
                 <option id = "1">1</option>
                 <option id = "2">2</option>
@@ -186,6 +186,7 @@
 
         // Capture the form inputs 
         $("#submit").on("click", function(){
+            event.preventDefault();
 
                     var q1 = parseInt($('#qone').val());
                     var q2 = parseInt($('#qtwo').val());
